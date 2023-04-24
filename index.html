@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Website security</title>
+  </head>
+  <body>
+
+  <!-- Encabezado -->
+    <nav  class="navbar fixed-top navbar-expand-lg navbar-light bg-light"  id="menu">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <span class="fs-5 fw-bold" style="color: #c9031a;">Inicio</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="website security.html">Website security</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="phishing attack.html">Phishing attack</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sql injection.html">SQL injection</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carousel" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./img/portada.PNG" class="d-block w-100" alt="">
+          </div>        
+ 
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/portada2.PNG" class="d-block w-100" alt="...">
+          </div>
+ 
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/portada3.PNG" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>    
+
+    <!-- Introducción a la página -->
+    <section class="d-flex flex-column justify-content-center align-items-center pt-3  text-start  m-auto" id="intro">
+    <h1 class="p-3 fs-3 border-top border-3">Introduction</h1>
+     <p class="p-3  fs-5">
+          In the world, every day there are thousands of websites, web servers and mobile devices that are the target of so-called hackers. 
+          Websites that are no longer available, modified or damaged information, email address leaks, credit cards, passwords, and 
+          countless problems that we will face if we do not properly protect our website. <span style="color: #9d1722;">This is the primary purpose of web security: </span>
+          to prevent attacks and to protect websites from unauthorized access, use, modification, destruction or interruption.
+     </p>   
+    </section>
+
+  <!-- Tipos de dulces 
+  <section class="w-100">
+      <div class="row w-75 mx-auto">       
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+              <img src="./img/dulces1.png" alt="desarrollo"   width="180" height="160">
+
+              <div>
+                  <h3 class="fs-5 mt-4 px-4 pb-1" style="color:#c1cad6;">Desarrollo</h3>
+                  <p class="px-4">Desarrollo de aplicaciones WEB, moviles y ecommerce</p>
+              </div>
+
+      </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+            <img src="./img/dulces2.png" alt="concepto" width="180" height="160">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1" style="color:#c1cad6;">Branding</h3>
+                <p class="px-4">Diseño, Conceptualización e Implementación de productos digitales</p>
+            </div>
+        </div>   
+      </div>
+    
+    <div class="row w-75 mx-auto mb-5">       
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+            <img src="./img/dulces3.png" alt="comunicaciones" width="180" height="160">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1" style="color:#c1cad6;">Comunicaciones</h3>
+                <p class="px-4">Desarrollo  del plan de comunicaciones para sus clientes.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+            <img src="./img/dulces4.png" alt="seo" width="180" height="160" >
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1" style="color:#c1cad6;">SEO</h3>
+                <p class="px-4">Analizamos la eficiencia y optimizamos los sitios WEB</p>
+            </div>
+        </div>   
+    </div>
+</section>-->
+
+<div class="container">
+<div class="row text-center">
+<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="card shadow">
+  <img src="img/WS.JPG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Website security</h5>
+    <p class="card-text">Web security consists of every action or tool adopted to prevent information from being exposed.</p>
+    <a href="website security.html" class="btn btn-outline-info">Go</a>
+  </div>  
+</div>
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="card shadow">
+  <img src="img/PA.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Phishing atack</h5>
+    <p class="card-text">Phishing is when attackers attempt to trick users into doing 'the wrong thing'.</p>
+    <a href="phishing attack.html" class="btn btn-outline-info">Go</a>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="card shadow">
+  <img src="img/SQLI.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">SQL Injection</h5>
+    <p class="card-text">Is a type of covert cyber attack in which a hacker inserts his own code into a website. in order to breach security measures.  </p>
+    <a href="sql injection.html" class="btn btn-outline-info">Go</a> 
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br> <br>
+
+<!--  Conclusion-->
+<section class="d-flex flex-column justify-content-center align-items-center pt-3  text-center m-auto" id="intro">
+  <h1 class="p-3 fs-3 border-top border-3">Conclusion</h1>
+   <p class="p-3  fs-5">
+        Many companies usually leave it for the latter, when there is almost no budget. In fact, computer security is a factor that few people take into account, 
+        exposing important company information. This not only affects employees and entrepreneurs, but also their users, and as a consequence, the brand image. 
+        The importance of web security and its actions help to have a secure page, avoiding as much as possible that our human factor and trust are a hole through 
+        which problems and unwanted hackers enter.
+   </p>   
+  </section>
+
+  <!-- Referencias -->
+<section class="d-flex flex-column justify-content-center align-items-center text-start m-auto" id="intro">
+  <h1 class="p-3 fs-3 border-top border-3">References</h1>
+   <p class="p-3  fs-6">
+    KnowBe. (s. f.). Phishing | Phishing Techniques. https://www.phishing.org/phishing-techniques 
+    <br>
+    Web security and Website Security | Fortinet. (s. f.). Fortinet. https://www.fortinet.com/resources/cyberglossary/what-is-web-security 
+    <br>
+    Types of Cyber Attacks | Hacking Attacks & Techniques | Rapid7. (s. f.). Rapid7. https://www.rapid7.com/fundamentals/types-of-attacks/ 
+    <br>
+
+   </p>   
+  </section>
+
+<!-- Sección acerca de nosotros -->
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+  <p class="fs-5 px-3  pt-3"> 
+    Universidad Autonoma del Estado de Hidalgo<br>
+    Escuela Superior de Tizayuca <br>
+     </p>
+</footer>
+
+    <!-- Funcionamiento de carrusel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+  </body>
+</html>
